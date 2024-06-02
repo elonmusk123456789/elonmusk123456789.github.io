@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>浙江易锻精密机械有限公司门户网</title>
+		<meta name="keywords">
+		<meta name="description">
+		<meta name="author" content="PageAdmin CMS" data-url="http://www.pageadmin.net">
+		<meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0,user-scalable=0,minimal-ui">
+		<meta name="format-detection" content="telephone=no">
+		<meta name="renderer" content="webkit">
+		<link rel="stylesheet" href="static/css/font-awesome.min.css">
+		<link rel="stylesheet" href="static/css/iconfont.css">
+		<link rel="stylesheet" href="static/css/animate.min.css">
+		<link rel="stylesheet" href="static/css/swiper.min.css">
+		<link rel="stylesheet" href="static/css/base.css">
+		<link rel="stylesheet" href="static/css/style.css">
+		<script src="static/js/jquery-1.8.3.min.js"></script>
+		<script src="static/js/basic.js"></script>
+		<script src="static/js/script.js"></script>
+		<script src="static/js/jquery.SuperSlide.2.1.3.js"></script>
+		<script src="static/js/jquery.nicescroll.min.js"></script>
+		<script src="static/js/swiper.min.js"></script>
+		<!--[if lte IE 9]>
+        <script src="/Incs/bootstrap/js/respond.min.js"></script>
+        <script src="/Incs/bootstrap/js/html5.js"></script>
+    <![endif]-->
+	</head>
+	<script>
+		$(document).ready(function() {
+			var nice = $("body").niceScroll({
+				cursorcolor: "#3b3f46",
+				cursoropacitymax: 0.7,
+				boxzoom: true,
+				touchbehavior: true
+			}); // The document page (body)
+		});
+	</script>
+	<body>
+
+		<div class="header clearfix">
+			<div class="container header-con">
+				<div class="float-lg-left col-sm-3 col-sm-12">
+					<div class="w_fimg-000">
+						<a class="logo" href="index.html">
+							<img src="static/picture/53151349.png">
+						</a>
+					</div>
+				</div>
+				<div class="float-lg-right col-sm-9">
+					<div class="nav text-right col-md-right" id="navMenu">
+						<ul>
+							<li data-id="22"><a href="index.html">首页</a></li>
+							<li data-id="45"><a href="qygk.html">关于易锻</a>
+							</li>
+							<li data-id="232"><a href="xyjjfa.html">研发能力</a>
+							</li>
+							<li data-id="206"><a href="khal.html">案例展示</a>
+							</li>
+							<li data-id="167"><a href="new.html">新闻动态</a>
+								<ul>
+									<li data-id="170"><a href="qydt.html">公司新闻</a></li>
+								</ul>
+							</li>
+							<li data-id="168"><a href="contactUs.html">联系我们</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="mask-bg" id="maskBg"></div>
+				<span class="nav-toggle hidden-lg" id="navToggle"><i class="fa fa-bars"></i></span>
+			</div>
+		</div>
+		<script type="text/javascript">
+			var $navToggle = $("#navToggle"); //手机端菜单图标
+			var $maskBg = $("#maskBg"); //遮挡层
+			var $navMenu = $("#navMenu");
+			$navToggle.on("click", function() {
+				$maskBg.addClass("active");
+				$navMenu.addClass("active");
+			});
+			$maskBg.on("click", function() {
+				$maskBg.removeClass("active");
+				$navMenu.removeClass("active");
+			});
+			$navMenu.children("ul").find("li").InitNav(170, 167); //初始化响应式菜单
+		</script>
+
+
+
+
+		<div class="page-news news-Deatail">
+			<div class="container padding-top-30 padding-bottom-30">
+				<div class="row">
+					<div class="con-index">
+						<div class="projectlist-title1"><span>公司新闻</span></div>
+						<div class="projectlist-x"></div>
+						<div class="wow slideInLeft subnav-width">
+							<div class="sub-nav-box">
+								<div class="sub-nav" id="subNav">
+									<ul>
+										<li data-id="170"><a href="qydt.html">公司新闻</a></li>
+									</ul>
+								</div>
+							</div>
+							<script type="text/javascript">
+								var $subNav = $("#subNav");
+								$subNav.children("ul").find("li").InitNav(170); //初始化响应式菜单
+							</script>
+						</div>
+					</div>
+				</div>
+				<div class="">
+					<div class="text-center line-height-1-5  margin-bottom-20 font-size-20 text-white">政府报道
+					</div>
+					<div class="text-center text-grayLight">
+						<span title="发布时间" class="margin-right-20"></span>
+					</div>
+
+					<!--图片组-->
+
+
+					<style>
+						/*图片组*/
+						.images-box .swiper-container {
+							width: 100%;
+							margin-left: auto;
+							margin-right: auto;
+						}
+
+						.images-box .swiper-slide {
+							background-size: cover;
+							background-position: center;
+						}
+
+						.images-box .swiper-slide-thumb-active {
+							border: 3px solid #fff;
+						}
+
+						.images-box .gallery-top {
+							width: 100%;
+						}
+
+						.images-box .gallery-top .swiper-slide a {
+							display: block;
+							width: 100%;
+							margin: 0px auto;
+						}
+
+						.images-box .gallery-top .swiper-slide img {
+							display: block;
+							margin: 20px auto;
+						}
+
+						.images-box .gallery-thumbs {
+							height: auto;
+							box-sizing: border-box;
+							padding: 30px 60px;
+							overflow: hidden;
+							background-color: rgba(153, 153, 153, 0.3);
+						}
+
+						.images-box .gallery-thumbs .swiper-slide {
+							opacity: 0.4;
+							cursor: pointer
+						}
+
+						.images-box .gallery-thumbs .swiper-slide-thumb-active {
+							opacity: 1;
+						}
+
+						.images-box .swiper-button-next,
+						.images-box .swiper-button-prev {
+							width: 36px;
+							height: 100%;
+							background-size: 70% 70%;
+							top: 22px;
+						}
+
+						.images-box .swiper-button-next {
+							right: 0;
+						}
+
+						.images-box .swiper-button-prev {
+							left: 0;
+						}
+
+						/*.gallery-thumbs img{max-height:145px;width:100%;}*/
+						@media(max-width:768px) {
+							.images-box .gallery-top .swiper-slide img {}
+
+							.images-box .gallery-thumbs {
+								width: 100%;
+								padding: 10px;
+							}
+
+							.images-box .gallery-thumbs .swiper-wrapper {
+								width: 100%;
+							}
+
+							.images-box .swiper-button-next,
+							.images-box .swiper-button-prev {
+								display: none;
+							}
+						}
+					</style>
+					<!-- Swiper -->
+
+					<!-- Swiper JS -->
+					<!-- Initialize Swiper -->
+					<script>
+						var galleryThumbs = new Swiper('.gallery-thumbs', {
+							spaceBetween: 14,
+							slidesPerView: 4,
+							freeMode: true,
+							watchSlidesVisibility: true,
+							watchSlidesProgress: true,
+						});
+						var galleryTop = new Swiper('.gallery-top', {
+							spaceBetween: 10,
+							navigation: {
+								nextEl: '.swiper-button-next',
+								prevEl: '.swiper-button-prev',
+							},
+							thumbs: {
+								swiper: galleryThumbs
+							}
+						});
+					</script>
+
+
+					<div class="new_content">
+						<p
+							style="margin-top: 0px; margin-bottom: 0px; padding: 0px; outline: 0px; max-width: 100%; clear: both; min-height: 1em; color: rgba(0, 0, 0, 0.9); font-family: system-ui, -apple-system, BlinkMacSystemFont, &quot;Helvetica Neue&quot;, &quot;PingFang SC&quot;, &quot;Hiragino Sans GB&quot;, &quot;Microsoft YaHei UI&quot;, &quot;Microsoft YaHei&quot;, Arial, sans-serif; letter-spacing: 0.544px; text-align: justify; text-wrap: wrap; background-color: rgba(67, 163, 238, 0.07); box-sizing: border-box !important; overflow-wrap: break-word !important;">
+							&nbsp; &nbsp; &nbsp; &nbsp;
+							<!-- 我司承建的 -->
+							<strong
+								style="margin: 0px; padding: 0px; outline: 0px; max-width: 100%; box-sizing: border-box !important; overflow-wrap: break-word !important;">
+								<!-- “国网江西电力供服中心计量检定能力提升五线一库一系统建设单相电能表1#检定流水线项目”</strong>已完成主体安装工作，顺利进入调试、测试阶段。 -->
+						</p>
+						<p style="text-align: center;"><img src="static/picture/18891445210.png" title="640 (3).png"
+								alt="640 (3).png" width="568" height="464" style="width: 568px; height: 464px;"></p>
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+		<script type="text/javascript">
+			var $lb_clicks = $("#lb_clicks");
+			$.post("/E/InfoData/AddClicks", {
+				ColumnId: 170,
+				Id: 1634
+			}, function(data) {
+				$lb_clicks.text(data)
+			})
+		</script>
+
+
+		<footer class="padding-top-50 padding-bottom-40">
+			<div class="container">
+				<div class=" wow slideInUp addfooter">
+					<p style="hegith:30px"><br></p>
+					<p style="text-align: center;"><span
+							style="font-family: arial, helvetica, sans-serif; font-size: 14px;"><span
+								style="font-family: &quot;Helvetica Neue, Helvetica, Tahoma, Arial, sans-serif&quot;;">版权所有
+								Copyright © 2024浙江易锻精密机械有限公司
+							</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span
+								style="font-family: &quot;Helvetica Neue, Helvetica, Tahoma, Arial, sans-serif&quot;;"><a
+									href="http://beian.miit.gov.cn" target="_blank"
+									style="color:#000"><!-- 此处填备案号 --></a></span></span><br></p>
+				</div>
+			</div>
+		</footer>
+		<a href="#" id="toTop" style="display: inline;"><span id="toTopHover" style="opacity: 0;"></span>To Top</a>
+		<script src="static/js/wow.min.js" type="text/javascript"></script>
+		<script type="text/javascript">
+			if (!(/msie [6|7|8|9]/i.test(navigator.userAgent))) {
+				new WOW().init();
+			};
+		</script>
+		<!--[if lte IE 9]>
+<script type="text/javascript">
+    CheckInternetExplorer();//检测低版本ie
+</script>
+<![endif]-->
+	</body>
+	<script src="static/js/pa-flowrate.js" id="pa_flowrate" type="text/javascript"></script>
+</html>
